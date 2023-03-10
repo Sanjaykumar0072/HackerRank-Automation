@@ -21,7 +21,7 @@ browserPromise.then(function(browserInstance){
     return hkPromise;
 }).then(function(){
     console.log("hackerrank home page opened");
-    return waitAndClick('a[data-event-action="Login"]');
+    return waitAndClick('.menu-item-12851 a');
 //}).then(function(){
 //     let loginhkPromise = page.click('a[data-event-action="Login"]',{
 //         delay: 200,
@@ -29,7 +29,7 @@ browserPromise.then(function(browserInstance){
 //     return loginhkPromise;
  }).then(function(){
     console.log("login is clicked");
-    return waitAndClick(".fl-col.fl-node-5bd106f71cd43 .fl-button");
+    return waitAndClick(".create_account-content li:last-child .hr_button");
 // }).then(function(){
 //     let logInDeveloperPromise = page.click(".fl-col.fl-node-5bd106f71cd43 .fl-button",{
 //         delay:200,

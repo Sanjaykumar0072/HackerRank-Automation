@@ -11,9 +11,9 @@ async function func(){
     let browserInstance = await puppeteer.launch({ headless: false,defaultViewport:null,rgs:['--start-maximized'] });
     let newPage = await browserInstance.newPage();
     await newPage.goto("https://hackerrank.com");
-    await waitAndClick('a[data-event-action="Login"]',newPage);
+    await waitAndClick('.menu-item-12851 a',newPage);
     //await newPage.click('a[data-event-action="Login"]',{delay:200});
-    await waitAndClick(".fl-col.fl-node-5bd106f71cd43 .fl-button",newPage);
+    await waitAndClick(".create_account-content li:last-child .hr_button",newPage);
     //await newPage.click(".fl-col.fl-node-5bd106f71cd43 .fl-button",{delay:100});
     await newPage.waitForSelector('input[name="username"]');
     await newPage.type('input[name="username"]',email);
